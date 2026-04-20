@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jades Web — Páginas web para negocios en Costa Rica</title>
+  <meta name="description" content="Servicios de desarrollo web para pequeños y medianos negocios. Plan Básico desde $150 setup + $35/mes. Diseño responsive, dominio, email corporativo y soporte incluido.">
+  <meta name="keywords" content="página web Costa Rica, diseño web pequeños negocios, web developer Costa Rica, landing page, presencia digital">
+  <meta property="og:title" content="Jades Web — Páginas web para negocios en Costa Rica">
+  <meta property="og:description" content="Tu negocio necesita una presencia web seria. Planes desde $150 con dominio, email corporativo y soporte incluido.">
+  <link rel="stylesheet" href="jades_style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">jades<span>.web</span></a>
+
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#planes"   class="nav__link">Planes</a>
+        <a href="#proceso"  class="nav__link">Proceso</a>
+        <a href="#extras"   class="nav__link">Extras</a>
+        <a href="#faq"      class="nav__link">FAQ</a>
+      </nav>
+
+      <a href="https://wa.me/50686902393?text=Hola%20Johan%2C%20quiero%20información%20sobre%20los%20planes%20web"
+         target="_blank" rel="noopener" class="nav__cta">
+        Consultar por WhatsApp
+      </a>
+
+      <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay -->
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <a href="#planes"  onclick="closeMob()">Planes</a>
+    <a href="#proceso" onclick="closeMob()">Proceso</a>
+    <a href="#extras"  onclick="closeMob()">Extras</a>
+    <a href="#faq"     onclick="closeMob()">FAQ</a>
+    <a href="https://wa.me/50686902393" target="_blank" rel="noopener" onclick="closeMob()">WhatsApp</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+
+        <!-- LEFT -->
+        <div class="hero__content">
+          <div class="hero__tag reveal">
+            <span class="hero__tag-dot"></span>
+            Disponible para nuevos proyectos
+          </div>
+
+          <h1 class="t-display hero__title reveal d1">
+            Tu negocio necesita<br>
+            una web <em>que venda</em>
+          </h1>
+
+          <p class="t-sub hero__desc reveal d2">
+            Desarrollo páginas web para pequeños y medianos negocios en Costa Rica.
+            Con dominio, email corporativo, diseño responsive y soporte real incluido.
+            Sin contratos complicados.
+          </p>
+
+          <div class="hero__actions reveal d3">
+            <a href="#planes" class="btn btn--primary">
+              Ver planes y precios
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2.5 7h9M8 3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/50686902393?text=Hola%20Johan%2C%20quiero%20información%20sobre%20los%20planes%20web"
+               target="_blank" rel="noopener" class="btn btn--ghost">
+              Hablar por WhatsApp
+            </a>
+          </div>
+
+          <div class="hero__trust reveal d4">
+            <div>
+              <div class="t-label" style="margin-bottom:.3rem;">Herramientas usadas</div>
+              <div class="hero__trust-text">
+                GitHub Pages · Namecheap · Zoho Mail · Formspree · Google Analytics
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT — bento visual -->
+        <div class="hero__visual reveal d2" aria-hidden="true">
+
+          <div class="vis-card">
+            <div class="vis-card__label">Plan activo</div>
+            <div class="vis-card__plan">Plan Profesional — Distribuidora Mora</div>
+            <div class="vis-card__price">$300 setup · $60/mes · 3 actualizaciones</div>
+            <div class="vis-card__bar"><div class="vis-card__fill" style="width:72%"></div></div>
+          </div>
+
+          <div class="vis-row">
+            <div class="vis-stat">
+              <div class="vis-stat__num">1–2</div>
+              <div class="vis-stat__label">días entrega plan básico</div>
+            </div>
+            <div class="vis-stat">
+              <div class="vis-stat__num">$0</div>
+              <div class="vis-stat__label">costo de hosting</div>
+            </div>
+          </div>
+
+          <div class="vis-card">
+            <div class="vis-card__label">Última actualización</div>
+            <div class="vis-card__plan">Cambio de fotos sección servicios</div>
+            <div class="vis-card__price">15 minutos · Push a GitHub · En producción</div>
+            <div class="vis-card__bar"><div class="vis-card__fill" style="width:100%"></div></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         TRUST BAR
+    ══════════════════════════════════════════ -->
+    <div class="trust">
+      <div class="container trust__inner">
+        <span class="trust__label">Tecnologías</span>
+        <div class="trust__items">
+          <span class="trust__item">HTML · CSS · JS</span>
+          <span class="trust__item">GitHub Pages</span>
+          <span class="trust__item">Formspree</span>
+          <span class="trust__item">Google Analytics</span>
+          <span class="trust__item">n8n</span>
+          <span class="trust__item">Google Sheets API</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         PLANES
+    ══════════════════════════════════════════ -->
+    <section class="section" id="planes">
+      <div class="container">
+
+        <div class="sh reveal">
+          <span class="sh__label t-label">Planes del ecosistema web</span>
+          <h2 class="t-heading sh__title">Tres niveles.<br>Un solo proveedor.</h2>
+          <p class="t-sub sh__sub">
+            Desde una presencia básica hasta un catálogo con inventario sincronizado automáticamente.
+            Todos los planes incluyen dominio configurado, email corporativo y soporte por WhatsApp.
+          </p>
+        </div>
+
+        <div class="plans__grid">
+
+          <!-- BÁSICO -->
+          <div class="plan reveal">
+            <div class="plan__tier">Plan Básico</div>
+
+            <div class="plan__price">
+              <span class="plan__currency">$</span>
+              <span class="plan__amount">150</span>
+            </div>
+            <div class="plan__period">setup único</div>
+            <div class="plan__monthly">+ $35 / mes mantenimiento</div>
+
+            <p class="plan__desc">
+              Una sola página larga con todo lo esencial. Ideal para negocios que
+              recién arrancan su presencia digital o que no necesitan más que ser encontrados.
+            </p>
+
+            <ul class="plan__features">
+              <li class="feat feat--yes">Landing page una sola sección</li>
+              <li class="feat feat--yes">Dominio .com configurado</li>
+              <li class="feat feat--yes">Diseño responsive (celular, tablet, PC)</li>
+              <li class="feat feat--yes">Botón de WhatsApp flotante</li>
+              <li class="feat feat--yes">Google Maps integrado</li>
+              <li class="feat feat--yes">Email corporativo (Zoho Mail)</li>
+              <li class="feat feat--yes">1 actualización de contenido/mes</li>
+              <li class="feat feat--yes">Soporte por WhatsApp</li>
+              <li class="feat feat--no">Formulario de contacto</li>
+              <li class="feat feat--no">Google Analytics</li>
+              <li class="feat feat--no">Catálogo de productos</li>
+              <li class="feat feat--no">Panel de administración</li>
+            </ul>
+
+            <a href="https://wa.me/50686902393?text=Quiero%20información%20del%20Plan%20Básico"
+               target="_blank" rel="noopener"
+               class="btn btn--ghost btn--full">
+              Consultar plan básico
+            </a>
+          </div>
+
+          <!-- PROFESIONAL -->
+          <div class="plan plan--featured reveal d1">
+            <div class="plan__badge">Más solicitado</div>
+            <div class="plan__tier">Plan Profesional</div>
+
+            <div class="plan__price">
+              <span class="plan__currency">$</span>
+              <span class="plan__amount">300</span>
+            </div>
+            <div class="plan__period">setup único</div>
+            <div class="plan__monthly">+ $60 / mes mantenimiento</div>
+
+            <p class="plan__desc">
+              Hasta 5 secciones completas, formulario de contacto funcional, Analytics
+              y reporte mensual de visitas. Para negocios que quieren resultados medibles.
+            </p>
+
+            <ul class="plan__features">
+              <li class="feat feat--yes">Todo el plan Básico incluido</li>
+              <li class="feat feat--yes">Hasta 5 secciones completas</li>
+              <li class="feat feat--yes">Formulario conectado a Formspree</li>
+              <li class="feat feat--yes">Google Analytics configurado</li>
+              <li class="feat feat--yes">SEO básico (meta tags, velocidad)</li>
+              <li class="feat feat--yes">3 actualizaciones de contenido/mes</li>
+              <li class="feat feat--yes">Reporte mensual de visitas</li>
+              <li class="feat feat--yes">Google Search Console (opcional)</li>
+              <li class="feat feat--no">Catálogo de productos</li>
+              <li class="feat feat--no">Panel de administración</li>
+              <li class="feat feat--no">Automatizaciones</li>
+            </ul>
+
+            <a href="https://wa.me/50686902393?text=Quiero%20información%20del%20Plan%20Profesional"
+               target="_blank" rel="noopener"
+               class="btn btn--primary btn--full">
+              Consultar plan profesional
+            </a>
+          </div>
+
+          <!-- PREMIUM -->
+          <div class="plan reveal d2">
+            <div class="plan__tier">Plan Premium</div>
+
+            <div class="plan__price">
+              <span class="plan__currency">$</span>
+              <span class="plan__amount">600</span>
+            </div>
+            <div class="plan__period">setup único</div>
+            <div class="plan__monthly">+ $125 / mes mantenimiento</div>
+
+            <p class="plan__desc">
+              Catálogo de productos conectado a Google Sheets. El cliente actualiza
+              precios e inventario desde su celular. La web se sincroniza sola.
+            </p>
+
+            <ul class="plan__features">
+              <li class="feat feat--yes">Todo el plan Profesional incluido</li>
+              <li class="feat feat--yes">Catálogo con fotos y precios</li>
+              <li class="feat feat--yes">Google Sheets como panel de control</li>
+              <li class="feat feat--yes">Sincronización automática de inventario</li>
+              <li class="feat feat--yes">Stock 0 = producto oculto automático</li>
+              <li class="feat feat--yes">Automatización WhatsApp al dueño</li>
+              <li class="feat feat--yes">Reporte mensual automático</li>
+              <li class="feat feat--yes">Actualizaciones de diseño ilimitadas</li>
+              <li class="feat feat--yes">Soporte prioritario — 24h máximo</li>
+            </ul>
+
+            <a href="https://wa.me/50686902393?text=Quiero%20información%20del%20Plan%20Premium"
+               target="_blank" rel="noopener"
+               class="btn btn--ghost btn--full">
+              Consultar plan premium
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         COMPARATIVA
+    ══════════════════════════════════════════ -->
+    <section class="section section--alt">
+      <div class="container">
+
+        <div class="sh reveal" style="text-align:center; margin-inline:auto;">
+          <span class="sh__label t-label">Comparativa rápida</span>
+          <h2 class="t-heading sh__title">¿Qué incluye cada plan?</h2>
+        </div>
+
+        <div class="reveal d1" style="overflow-x:auto;">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>Básico</th>
+                <th>Profesional</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dominio .com configurado</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Email corporativo (Zoho)</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Diseño responsive</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Botón WhatsApp flotante</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Google Maps integrado</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Formulario de contacto (Formspree)</td>
+                <td class="cross">No incluido</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Google Analytics</td>
+                <td class="cross">No incluido</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>SEO básico configurado</td>
+                <td class="cross">No incluido</td>
+                <td class="check">Incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Catálogo de productos</td>
+                <td class="cross">No incluido</td>
+                <td class="cross">No incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Panel Google Sheets + n8n</td>
+                <td class="cross">No incluido</td>
+                <td class="cross">No incluido</td>
+                <td class="check">Incluido</td>
+              </tr>
+              <tr>
+                <td>Actualizaciones/mes</td>
+                <td>1</td>
+                <td>3</td>
+                <td>Ilimitadas</td>
+              </tr>
+              <tr>
+                <td>Tiempo de entrega</td>
+                <td>1–2 días</td>
+                <td>4–6 días</td>
+                <td>1–2 semanas</td>
+              </tr>
+              <tr>
+                <td>Setup</td>
+                <td>$150</td>
+                <td>$300</td>
+                <td>$600</td>
+              </tr>
+              <tr>
+                <td>Mantenimiento mensual</td>
+                <td>$35/mes</td>
+                <td>$60/mes</td>
+                <td>$125/mes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROCESO
+    ══════════════════════════════════════════ -->
+    <section class="section" id="proceso">
+      <div class="container">
+
+        <div class="sh reveal">
+          <span class="sh__label t-label">Cómo funciona</span>
+          <h2 class="t-heading sh__title">Del primer mensaje<br>a la web publicada</h2>
+          <p class="t-sub sh__sub">
+            Sin reuniones interminables ni procesos complicados.
+            Todo por WhatsApp, al ritmo del cliente.
+          </p>
+        </div>
+
+        <div class="process__steps reveal d1">
+
+          <div class="step">
+            <div class="step__num">01</div>
+            <div class="step__body">
+              <div class="step__title">Me enviás la información del negocio</div>
+              <div class="step__desc">
+                Nombre, colores, servicios, número de WhatsApp y dirección.
+                Si no tenés logo, lo dejamos sin logo o lo cotizamos aparte.
+                Todo por WhatsApp, sin formularios.
+              </div>
+            </div>
+            <span class="step__tag step__tag--blue">Día 0</span>
+          </div>
+
+          <div class="step">
+            <div class="step__num">02</div>
+            <div class="step__body">
+              <div class="step__title">Desarrollo la página y te muestro un preview</div>
+              <div class="step__desc">
+                En 1–2 días (plan básico) o 4–6 días (profesional) tenés un link
+                para revisar el sitio en tiempo real. Hacemos los ajustes que necesités.
+              </div>
+            </div>
+            <span class="step__tag step__tag--amber">Desarrollo</span>
+          </div>
+
+          <div class="step">
+            <div class="step__num">03</div>
+            <div class="step__body">
+              <div class="step__title">Compro el dominio y configuro el hosting</div>
+              <div class="step__desc">
+                Compro el .com en Namecheap (cobrado al cliente, ~$10/año).
+                Activo GitHub Pages y apunto los DNS. En 24–48 horas el dominio
+                ya apunta a tu sitio.
+              </div>
+            </div>
+            <span class="step__tag step__tag--green">Publicación</span>
+          </div>
+
+          <div class="step">
+            <div class="step__num">04</div>
+            <div class="step__body">
+              <div class="step__title">Configuro el email corporativo</div>
+              <div class="step__desc">
+                Creo la cuenta en Zoho Mail (ej: contacto@tunegocio.com).
+                El cliente puede usarla desde el celular o la computadora, sin costo adicional.
+              </div>
+            </div>
+            <span class="step__tag step__tag--blue">Setup</span>
+          </div>
+
+          <div class="step">
+            <div class="step__num">05</div>
+            <div class="step__body">
+              <div class="step__title">Mantenimiento mensual por WhatsApp</div>
+              <div class="step__desc">
+                El cliente manda los cambios por WhatsApp dentro del mes.
+                Edito el HTML, hago push a GitHub y el cambio aparece en minutos.
+                Una actualización tarda 15–30 minutos.
+              </div>
+            </div>
+            <span class="step__tag step__tag--green">Recurrente</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         EXTRAS / ADD-ONS
+    ══════════════════════════════════════════ -->
+    <section class="section section--alt" id="extras">
+      <div class="container">
+
+        <div class="sh reveal">
+          <span class="sh__label t-label">Servicios adicionales</span>
+          <h2 class="t-heading sh__title">Extras que podés<br>agregar a cualquier plan</h2>
+          <p class="t-sub sh__sub">
+            Cobro por evento o mensual según el servicio.
+            Todo acordado antes de empezar.
+          </p>
+        </div>
+
+        <div class="addons__grid">
+
+          <div class="addon reveal">
+            <div class="addon__icon addon__icon--blue">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div class="addon__body">
+              <div class="addon__name">Add-on tienda con inventario</div>
+              <div class="addon__desc">
+                Catálogo + Google Sheets como panel + sincronización automática con n8n.
+                Se agrega a cualquier plan existente sin rediseñar la página.
+              </div>
+              <div class="addon__price">+$50 / mes</div>
+            </div>
+          </div>
+
+          <div class="addon reveal d1">
+            <div class="addon__icon addon__icon--green">
+              <svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <div class="addon__body">
+              <div class="addon__name">Redacción de contenido</div>
+              <div class="addon__desc">
+                Textos para el sitio si el cliente no tiene o no sabe qué poner.
+                Escritura de cada sección con tono profesional.
+              </div>
+              <div class="addon__price">$20–40 por sección</div>
+            </div>
+          </div>
+
+          <div class="addon reveal d2">
+            <div class="addon__icon addon__icon--amber">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div class="addon__body">
+              <div class="addon__name">Automatización extra n8n</div>
+              <div class="addon__desc">
+                Cada flujo de automatización adicional fuera del plan:
+                notificaciones, integraciones, envío automático de reportes, etc.
+              </div>
+              <div class="addon__price">$25–40 / mes por flujo</div>
+            </div>
+          </div>
+
+          <div class="addon reveal d3">
+            <div class="addon__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="addon__body">
+              <div class="addon__name">Actualizaciones fuera del límite</div>
+              <div class="addon__desc">
+                Si necesitás más cambios de los incluidos en el mes,
+                podés pagar por unidad o en bloque de 5.
+              </div>
+              <div class="addon__price">$10 por cambio · $30 bloque de 5</div>
+            </div>
+          </div>
+
+          <div class="addon reveal">
+            <div class="addon__icon addon__icon--blue">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            </div>
+            <div class="addon__body">
+              <div class="addon__name">Logo ilustrado</div>
+              <div class="addon__desc">
+                Hecho por ilustrador con derechos de uso comercial exclusivo para el cliente.
+                No es generado por IA, es trabajo original.
+              </div>
+              <div class="addon__price">$80–150 por encargo</div>
+            </div>
+          </div>
+
+          <div class="addon reveal d1">
+            <div class="addon__icon addon__icon--neutral">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="addon__body">
+              <div class="addon__name">Soporte técnico remoto</div>
+              <div class="addon__desc">
+                Diagnóstico de equipos, configuración de software, resolución
+                de problemas técnicos fuera del scope del sitio web.
+              </div>
+              <div class="addon__price">$15–25 por hora</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         TÉRMINOS CLAVE
+    ══════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+
+        <div class="sh reveal">
+          <span class="sh__label t-label">Condiciones claras</span>
+          <h2 class="t-heading sh__title">Lo que necesitás saber<br>antes de contratar</h2>
+        </div>
+
+        <div class="terms__grid reveal d1">
+          <div class="term">
+            <div class="term__bullet"></div>
+            <div class="term__text">
+              <strong>Setup obligatorio antes de empezar.</strong> El pago del setup se hace antes de iniciar cualquier trabajo. Sin adelanto no hay proyecto.
+            </div>
+          </div>
+          <div class="term">
+            <div class="term__bullet"></div>
+            <div class="term__text">
+              <strong>Dominio es propiedad del cliente.</strong> Si cancelás, te transferimos el acceso completo al dominio. Es tuyo, no nuestro.
+            </div>
+          </div>
+          <div class="term">
+            <div class="term__bullet"></div>
+            <div class="term__text">
+              <strong>Mensualidad el mismo día cada mes.</strong> Si no se paga en 7 días, el servicio se pausa pero no se elimina. Con pago se reactiva.
+            </div>
+          </div>
+          <div class="term">
+            <div class="term__bullet"></div>
+            <div class="term__text">
+              <strong>Cancelación con 15 días de aviso.</strong> El sitio queda activo hasta el fin del período pagado. Sin penalidades.
+            </div>
+          </div>
+          <div class="term">
+            <div class="term__bullet"></div>
+            <div class="term__text">
+              <strong>El contenido es responsabilidad del cliente.</strong> Textos y fotos los provee el cliente. Redacción disponible como servicio adicional.
+            </div>
+          </div>
+          <div class="term">
+            <div class="term__bullet"></div>
+            <div class="term__text">
+              <strong>Respuesta máxima 24 horas en días hábiles.</strong> Soporte por WhatsApp en horario normal. Premium tiene prioridad garantizada.
+            </div>
+          </div>
+          <div class="term">
+            <div class="term__bullet"></div>
+            <div class="term__text">
+              <strong>Cambios de inventario no cuentan como actualizaciones.</strong> En el plan Premium, editar precios y stock en Google Sheets no descuenta actualizaciones del mes.
+            </div>
+          </div>
+          <div class="term">
+            <div class="term__bullet"></div>
+            <div class="term__text">
+              <strong>Costo adicional acordado previamente.</strong> Cualquier cambio fuera del límite mensual se cotiza antes de hacerse. Sin sorpresas.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CTA DARK
+    ══════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-dark reveal">
+          <div class="cta-dark__text">
+            <div class="cta-dark__label">Listo para empezar</div>
+            <h2 class="cta-dark__title">
+              Tu negocio puede tener<br>
+              una web seria <em>esta semana</em>
+            </h2>
+            <p class="cta-dark__sub">
+              Mandame un mensaje con el nombre del negocio y qué necesitás.
+              Te respondo en menos de 24 horas con una propuesta concreta.
+            </p>
+          </div>
+          <div class="cta-dark__actions">
+            <a href="https://wa.me/50686902393?text=Hola%20Johan%2C%20quiero%20información%20sobre%20los%20planes%20web"
+               target="_blank" rel="noopener" class="btn btn--dark">
+              Escribir por WhatsApp
+            </a>
+            <a href="mailto:johanja1000@gmail.com?subject=Consulta%20sobre%20planes%20web"
+               class="btn btn--ghost" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.5);">
+              Enviar email
+            </a>
+            <div class="cta-dark__contact">
+              +506 8690-2393 · johanja1000@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+
+        <div class="sh reveal" style="text-align:center; margin-inline:auto;">
+          <span class="sh__label t-label">Preguntas frecuentes</span>
+          <h2 class="t-heading sh__title">Lo que más preguntan</h2>
+        </div>
+
+        <div class="faq__list reveal d1">
+
+          <div class="faq-item" data-faq>
+            <button class="faq-item__q" aria-expanded="false">
+              ¿El dominio lo compro yo o lo comprás vos?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a">
+              Lo compro yo en Namecheap a nombre del negocio, pero el costo (~$10 al año)
+              va incluido en la factura del cliente. El dominio queda registrado a nombre del cliente
+              desde el inicio. Si algún día cancelás el servicio, te transfiero el acceso completo.
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq>
+            <button class="faq-item__q" aria-expanded="false">
+              ¿Cuánto tiempo tarda en estar lista la página?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a">
+              El plan Básico tarda 1 a 2 días desde que tengo toda la información del negocio.
+              El Profesional entre 4 y 6 días. El Premium entre 1 y 2 semanas.
+              El tiempo real depende de qué tan rápido el cliente envíe los materiales
+              (logo, fotos, textos).
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq>
+            <button class="faq-item__q" aria-expanded="false">
+              ¿Qué pasa si quiero cancelar el servicio mensual?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a">
+              Me avisás con 15 días de anticipación. El sitio sigue activo hasta el fin del
+              período pagado. Si ves que el servicio ya no te sirve, no hay penalidades ni cobros extras.
+              El dominio te lo transfiero y podés llevarlo a otro proveedor.
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq>
+            <button class="faq-item__q" aria-expanded="false">
+              ¿Cómo funciona el catálogo del plan Premium?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a">
+              El cliente tiene una hoja de Google Sheets con columnas de nombre, precio, stock,
+              descripción y foto de cada producto. n8n revisa esa hoja cada hora. Si el stock llega a 0,
+              el producto desaparece de la web automáticamente. Si el stock sube, vuelve a aparecer.
+              El cliente lo controla desde el celular sin pedirme nada.
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq>
+            <button class="faq-item__q" aria-expanded="false">
+              ¿Qué información necesitás para empezar?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a">
+              Para el plan Básico: nombre completo del negocio, colores que usa,
+              logo en PNG o JPG (opcional), número de WhatsApp, dirección exacta,
+              frase o descripción corta del negocio, lista de servicios y correo de contacto.
+              Para el Profesional suma: fotos del equipo y del local.
+              Para el Premium suma: lista de productos con precios, stock inicial y foto de cada uno.
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq>
+            <button class="faq-item__q" aria-expanded="false">
+              ¿El hosting tiene algún costo?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a">
+              No. Uso GitHub Pages para hospedar los sitios, que es completamente gratuito.
+              El único costo de infraestructura es el dominio (~$10 al año) que se cobra al cliente.
+              El mantenimiento mensual cubre el tiempo de trabajo, no infraestructura.
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq>
+            <button class="faq-item__q" aria-expanded="false">
+              ¿Puedo pedir cambios fuera del límite mensual?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__a">
+              Sí, con costo adicional acordado previamente. Un cambio extra cuesta $10.
+              Si sabés que vas a necesitar varios, el bloque de 5 actualizaciones extra sale $30.
+              Nunca se hace un cambio extra sin que el cliente apruebe el costo antes.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__logo">jades<span>.web</span></div>
+          <p class="footer__tagline">
+            Páginas web para pequeños y medianos negocios en Costa Rica.
+            Sin complicaciones, con resultados reales.
+          </p>
+          <div class="footer__contact">
+            <a href="mailto:johanja1000@gmail.com">johanja1000@gmail.com</a>
+            <a href="https://wa.me/50686902393" target="_blank" rel="noopener">+506 8690-2393</a>
+            <a href="https://jades-0.github.io" target="_blank" rel="noopener">jades-0.github.io</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Planes</div>
+          <div class="footer__col-links">
+            <a href="#planes">Plan Básico — $150</a>
+            <a href="#planes">Plan Profesional — $300</a>
+            <a href="#planes">Plan Premium — $600</a>
+            <a href="#extras">Add-on inventario</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Info</div>
+          <div class="footer__col-links">
+            <a href="#proceso">Cómo funciona</a>
+            <a href="#extras">Servicios adicionales</a>
+            <a href="#faq">Preguntas frecuentes</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Herramientas</div>
+          <div class="footer__col-links">
+            <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
+            <a href="https://namecheap.com"    target="_blank" rel="noopener">Namecheap</a>
+            <a href="https://formspree.io"     target="_blank" rel="noopener">Formspree</a>
+            <a href="https://zoho.com/mail"    target="_blank" rel="noopener">Zoho Mail</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Johan Jiménez — jades.web. Costa Rica.</span>
+        <span>Código limpio. Sin frameworks innecesarios.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/50686902393?text=Hola%20Johan%2C%20quiero%20información%20sobre%20los%20planes%20web"
+     target="_blank" rel="noopener"
+     class="fab-wa" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="jades_main.js"></script>
+</body>
+</html>
